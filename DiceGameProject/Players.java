@@ -16,14 +16,14 @@ public class Players {
         int roll = dice.nextInt(6) + 1;
         points += roll;
 
-        System.out.printf("%s rolls a %d and now has a total of %d points %n", name, roll, points);
+        System.out.println(name+" rolls a "+roll+" and now has "+points+" points");
     }
 
     public static void printResult(Players p1, Players p2) {
         if (p1.points > p2.points)
-            System.out.printf("%s wins with %d points%n",p1.name,p1.points);
+            System.out.println(p1.name +" wins with "+p1.points+ " points");
         else if (p2.points > p1.points)
-            System.out.printf("%s wins with %d points%n",p2.name, p2.points);
+            System.out.println(p2.name +" wins with "+p2.points+ " points");
         else
             System.out.println("Draw");
     }
